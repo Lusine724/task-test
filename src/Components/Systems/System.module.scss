@@ -1,0 +1,47 @@
+.contanier {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+.contanierTop {
+    width: 100%;
+    height: 40px;
+    border-bottom: 3px solid #ca7171;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contanierBottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.formPart {
+    width: 100%;
+    height: 100%;
+}
+.integrationBox {
+    background-color: red;
+    height: 20%;
+    display: flex;
+    gap: 10px;
+   
+}
+.repozitory {
+    background-color: blue;
+    height: 60%;
+
+}
+.allObjects {
+    background-color: pink;
+    height: 20%;
+
+}
+.checkbox {
+    width: 100%;
+    display: flex;
+}

@@ -34,6 +34,7 @@ const Systems = () => {
                                         <div className={cls.integrationBox}>
                                             <Checkbox/>
                                              <p>Детализация полномочий</p>
+                                             <p>hghguj</p>
                                         </div>
                                         <div className={cls.lastSync}>
                                             <p>Последняя синхронизация:</p>

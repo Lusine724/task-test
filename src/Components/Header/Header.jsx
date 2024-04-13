@@ -1,20 +1,20 @@
 import React from 'react'
 import cls from "./Header.module.scss"
-//import {ReactComponnet as SearchIcon} from "../../Icons/search.svg"
+import SearchIcon from '@mui/icons-material/Search'
+
+
 
 
 const Header = () => {
     return (
         <header className={cls.header}>
-            <h1>Загрузка интеграционных данных</h1>
+            <h1 className={cls.headTitle}>Загрузка интеграционных данных</h1>
             <div>
-                
-                <input placeholder='Search' />
-                         
+                <input placeholder='Поиск' className={cls.serachInput} />
+                <div className={cls.searchIcon}>
+                    <SearchIcon color="disabled"/>
+                </div>
             </div>
-
-
-
         </header>
     )
 }

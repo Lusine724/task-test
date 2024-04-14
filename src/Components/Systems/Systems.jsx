@@ -1,6 +1,6 @@
 import React from 'react'
-import { Checkbox, Switch } from '@mui/material'
-import { Formik } from 'formik'
+import { Checkbox, FormControlLabel} from '@mui/material'
+import { Field, Formik } from 'formik'
 import { useState } from 'react'
 import cls from "./System.module.scss"
 import SystemLine from '../SystemLine/SystemLine'
@@ -8,51 +8,112 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 
-const Systems = () => {
-    const [initialValues, setInitialValues] = useState({})
+const Systems = ({ info }) => {
+    const [initialValues] = useState({
+        details: false,
+        profiles: false,
+        roles: false,
+        users: false,
+        selectAll: false,
+        deltaDetails: false,
+        deltaProfiles: false,
+        deltaRoles: false,
+        deltaUsers: false,
+        futureDetails: false,
+        futureProfiles: false,
+        futureRoles: false,
+        futureUsers: false,
+        futureSelectAll: false
+    })
     const [show, setShow] = useState(true)
 
-    const handleSubmit = () => {
+    const handleSubmit = (values) => {
+        console.log(values)
+
+    }
+    const handleSelectAll = (e, formik) => {
+        const value = e.target.value !== "true"
+        Object.keys(initialValues).forEach(item => {
+            formik.setFieldValue(item, value)//poxarinum e item-i value-n
+        })
+
 
     }
     return (
         <div className={cls.contanier}>
             <div className={cls.contanierTop}>
                 <div className={cls.systemName}>
-                    <button className={cls.systemButton} onClick={(evt)=>{
+                    <button className={cls.systemButton} onClick={(evt) => {
                         setShow(!show)
-                    }}> <ChevronRightIcon size="small"/> </button>
-                    <p>ER0CLNT200</p>
-                    <span>SAP ERP Development system, если описание больше ...</span>
+                    }}> <ChevronRightIcon size="small" /> </button>
+                    <p>{info.name}</p>
+                    <span>{info.description}</span>
+                </div>
+                <div className={cls.syncTxt}>
                     <p className={cls.syncTime}>
-                        <CheckCircleOutlineIcon size = "small"/> Синхронизировано 02.05.2023 12:55</p>
+                        <CheckCircleOutlineIcon size="small" /> Синхронизировано {new Date(info.lastSync).toLocaleString("ru-RU").replace(",", "")}
+                    </p>
                 </div>
                 <div className={cls.syncData}>
                     <p>Запланирован в...</p>
-                    <button className={cls.systemButton}> <ChevronRightIcon size="small"/> </button>
+                    <button className={cls.systemButton}> <ChevronRightIcon size="small" /> </button>
                 </div>
             </div>
-            <div className={cls.contanierBottom}>
-                {
-                    show ?    <Formik
+            {show && <div className={cls.contanierBottom}>
+
+                <Formik
                     initialValues={initialValues}
-                    onSubmite={handleSubmit}
+                    onSubmit={handleSubmit}
                 >
                     {
-                        () => {
+                        (formik) => {
                             return (
-                                <form action="" className={cls.formPart}>
+                                <form className={cls.formPart} onSubmit={formik.handleSubmit}>
                                     <div className={cls.formContainer}>
-                                        <SystemLine name={"Детализация полномочий"} data={"29/04/2023"} />
+                                        <SystemLine
+                                            label={"Детализация полномочий"}
+                                            info={info.streams.filter(item => item.name === "details")}
+                                            name="details"
+                                        />
                                         <div className={cls.repozitory}>
                                             <h1>Объекты репозитория</h1>
-                                            <SystemLine name={"Профили"} data={"29/04/2023"} />
-                                            <SystemLine name={"Роли"} data={"29/04/2023"} />
-                                            <SystemLine name={"Пользователи"} data={"29/04/2023"} />
+                                            <SystemLine
+                                                label={"Профили"}
+                                                name="profiles"
+                                                info={info.streams.filter(item => item.name === "profiles")}
+                                            />
+                                            <SystemLine
+                                                label={"Роли"}
+                                                name="roles"
+                                                info={info.streams.filter(item => item.name === "roles")}
+                                            />
+                                            <SystemLine
+                                                label={"Пользователи"}
+                                                name="users"
+                                                info={info.streams.filter(item => item.name === "users")}
+                                            />
                                         </div>
                                         <div className={cls.selectLine}>
                                             <div className={cls.chooseAll}>
-                                                <Checkbox color="default" />
+                                                <Field
+                                                    name="selectAll"
+                                                    as={FormControlLabel}
+                                                    type="checkBox"
+                                                    control={<Checkbox 
+                                                        color='default' 
+                                                        sx={{
+                                                            "&:hover": {                                                              
+                                                              backgroundColor: 'white'
+
+                                                            }
+                                                          }}                                                         
+
+                                                        />}
+                                                    onChange={(e) => {
+                                                        handleSelectAll(e, formik)
+
+                                                    }}
+                                                />
                                                 <p>Выбрать все</p>
                                             </div>
                                             <div className={cls.syncSchedul}>
@@ -67,10 +128,11 @@ const Systems = () => {
                         }
                     }
 
-                </Formik> : <form action="" className={cls.formPart}></form>
-                }
-             
-            </div>
+                </Formik>
+
+
+            </div>}
+
 
         </div>
     )

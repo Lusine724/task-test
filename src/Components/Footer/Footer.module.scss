@@ -10,6 +10,10 @@
     background-color: #B7B7B7A6;
     margin-bottom: 15px;
 }
+.versionMudule {
+    display: flex;
+    gap: 60px;
+}
 .footerInfo {
     width: 100%;
     display: flex;
@@ -20,4 +24,16 @@
         font-size: 16px;
         ;
     }
+}
+@media screen and (max-width: 878px) {
+    .footerInfo {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .versionMudule {
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }

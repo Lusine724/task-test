@@ -1,0 +1,32 @@
+.responseMenu {
+    width: 100%;
+    padding: 15px 6px;
+    border-radius: 12px;
+    display: none;
+    margin-bottom: 25px;
+
+}
+
+.mainPart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pagination {
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+@media screen and (max-width: 878px) {
+    .responseMenu {
+        display: flex;
+    }
+
+    .pagination {
+        display: flex;
+    }
+
+}

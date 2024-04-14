@@ -67,6 +67,9 @@
 .syncTime {
     color: #363636;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .repozitory {
@@ -122,4 +125,12 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
+
+    &:hover {
+        background-color:  #363636;;
+
+    }
+}
+MuiCheckbox-root:hover {
+    background-color: red;
 }

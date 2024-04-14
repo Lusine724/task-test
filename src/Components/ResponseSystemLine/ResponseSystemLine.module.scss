@@ -3,6 +3,8 @@
     background-color:  rgba(90, 90, 90, 1);
     height: 300px;
     position: relative;
+    display: flex;
+    flex-direction: column;
     border-radius: 12px;
     border: 1px solid rgba(90, 90, 90, 1);
 
@@ -55,10 +57,10 @@
 
 .responseSystem {
     width: 100%;
-    position: absolute;
+    position: static;
     background-color: rgba(228, 228, 228, 1);
     border-radius: 12px;
-    ;
+    
 }
 
 .lastSync {
@@ -257,6 +259,10 @@
 
     }
 }
+.showHide {
+    width: 100%;
+    height: 100%;
+}
 .systemsName {
     width: 100%;
     height: 55px;
@@ -275,6 +281,6 @@
    border-radius: 12px;
     background-color: #fff;
     position: absolute;
-    top: 100%;
+    top: 81%;
     z-index: 1;
 }

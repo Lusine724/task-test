@@ -7,27 +7,32 @@ import { Pagination } from '@mui/material'
 
 const ResponseMenu = () => {
     const systems = useSelector(systemSlice.selector).systems
-    console.log(systems)
-
-
-
+   
     return (
         <div className={cls.responseMenuContainer}>
             <div className={cls.responseMenu}>
                 <div className={cls.mainPart}>
-                    <ResponseSystemLine />
-                    <ResponseSystemLine />
-                    <ResponseSystemLine />
-                    <ResponseSystemLine />
+                    {
+                        systems.map((item, index) => {
+                            return (
+                                <ResponseSystemLine
+                                    info={item}
+                                    key={index}
+
+                                />)
+                        })
+                    }
+
+
                 </div>
-               
+
 
             </div>
             <div className={cls.pagination}>
-            <Pagination count={4} variant="outlined" />
+                <Pagination count={4} variant="outlined" />
 
             </div>
-           
+
 
         </div>
 

@@ -1,185 +1,272 @@
 {
-    "systems": [
+  "systems": [
+    {
+      "id": "1",
+      "name": "ER0CLNT200",
+      "description": "SAP ERP Development system",
+      "lastSync": "2024-04-13T10:34:46.718Z",
+      "status": "success",
+      "streams": [
         {
-            "id": 1,
-            "name": "ER0CLNT200",
-            "description": "SAP ERP Development system",
-            "lastSync": "2024-04-13T10:34:46.718Z",
-            "status": "success",
-            "streams": [
-                {
-                    "id": 1,
-                    "name": "details",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 2,
-                    "name": "profiles",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 3,
-                    "name": "roles",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 4,
-                    "name": "users",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                }
-            ]
+          "id": "1",
+          "name": "details",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
         },
         {
-            "id": 2,
-            "name": "ER0CLNT200",
-            "description": "SAP ERP Development system",
-            "lastSync": "2024-04-13T10:34:46.718Z",
-            "status": "success",
-            "streams": [
-                {
-                    "id": 1,
-                    "name": "details",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 2,
-                    "name": "profiles",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 3,
-                    "name": "roles",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 4,
-                    "name": "users",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                }
-            ]
+          "id": "2",
+          "name": "profiles",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
         },
         {
-            "id": 3,
-            "name": "ER0CLNT200",
-            "description": "SAP ERP Development system",
-            "lastSync": "2024-04-13T10:34:46.718Z",
-            "status": "success",
-            "streams": [
-                {
-                    "id": 1,
-                    "name": "details",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 2,
-                    "name": "profiles",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 3,
-                    "name": "roles",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 4,
-                    "name": "users",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                }
-            ]
+          "id": "3",
+          "name": "roles",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
         },
         {
-            "id": 4,
-            "name": "ER0CLNT200",
-            "description": "SAP ERP Development system",
-            "lastSync": "2024-04-13T10:34:46.718Z",
-            "status": "success",
-            "streams": [
-                {
-                    "id": 1,
-                    "name": "details",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 2,
-                    "name": "profiles",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 3,
-                    "name": "roles",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                },
-                {
-                    "id": 4,
-                    "name": "users",
-                    "lastSync": "2024-04-13T10:34:46.718Z",
-                    "status": "success",
-                    "value": true,
-                    "deltaValue": true,
-                    "futureValue": true
-                }
-            ]
+          "id": "4",
+          "name": "users",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "5",
+          "name": "details",
+          "lastSync": "2024-04-14T11:50:55.224Z",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "6",
+          "name": "profiles",
+          "lastSync": "2024-04-14T11:51:12.030Z",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "7",
+          "name": "roles",
+          "lastSync": "2024-04-14T11:52:30.244Z",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": false
+        },
+        {
+          "id": "8",
+          "name": "profiles",
+          "lastSync": "2024-04-14T11:56:53.036Z",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": false
+        },
+        {
+          "id": "9",
+          "name": "roles",
+          "lastSync": "2024-04-14T11:56:53.036Z",
+          "value": false,
+          "deltaValue": false,
+          "futureValue": true
+        },
+        {
+          "id": "10",
+          "name": "profiles",
+          "lastSync": "2024-04-14T11:56:55.364Z",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": false
+        },
+        {
+          "id": "11",
+          "name": "roles",
+          "lastSync": "2024-04-14T11:56:55.364Z",
+          "value": false,
+          "deltaValue": false,
+          "futureValue": true
+        },
+        {
+          "id": "12",
+          "name": "profiles",
+          "lastSync": "2024-04-14T11:56:59.645Z",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": false
+        },
+        {
+          "id": "13",
+          "name": "roles",
+          "lastSync": "2024-04-14T11:56:59.645Z",
+          "value": false,
+          "deltaValue": false,
+          "futureValue": true
+        },
+        {
+          "id": "14",
+          "name": "roles",
+          "lastSync": "2024-04-14T11:57:26.602Z",
+          "value": true,
+          "deltaValue": false,
+          "futureValue": false
+        },
+        {
+          "id": "15",
+          "name": "profiles",
+          "lastSync": "2024-04-14T11:59:04.997Z",
+          "value": true,
+          "deltaValue": false,
+          "futureValue": false
         }
-       
-    ]
+      ]
+    },
+    {
+      "id": "2",
+      "name": "ER0CLNT200",
+      "description": "SAP ERP Development system",
+      "lastSync": "2024-04-13T10:34:46.718Z",
+      "status": "success",
+      "streams": [
+        {
+          "id": "1",
+          "name": "details",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "2",
+          "name": "profiles",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "3",
+          "name": "roles",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "4",
+          "name": "users",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "ER0CLNT200",
+      "description": "SAP ERP Development system",
+      "lastSync": "2024-04-13T10:34:46.718Z",
+      "status": "success",
+      "streams": [
+        {
+          "id": "1",
+          "name": "details",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "2",
+          "name": "profiles",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "3",
+          "name": "roles",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "4",
+          "name": "users",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "ER0CLNT200",
+      "description": "SAP ERP Development system",
+      "lastSync": "2024-04-13T10:34:46.718Z",
+      "status": "success",
+      "streams": [
+        {
+          "id": "1",
+          "name": "details",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "2",
+          "name": "profiles",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "3",
+          "name": "roles",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        },
+        {
+          "id": "4",
+          "name": "users",
+          "lastSync": "2024-04-13T10:34:46.718Z",
+          "status": "success",
+          "value": true,
+          "deltaValue": true,
+          "futureValue": true
+        }
+      ]
+    }
+  ]
 }
